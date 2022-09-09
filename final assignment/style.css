@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(205, 205, 206);
+}
+
+header {
+    width: 100vw;
+    margin-bottom: 20px;
+    background-color: rgb(55, 54, 54);
+    color: #fff;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 18px;
+}
+
+#clear_all {
+    grid-column: span 2;
+}
+
+a {
+    color: #fff
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 35px 20px rgb(57, 99, 124);
+}
+
+.display {
+    height: 100px;
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+    font-size: 30px;
+    position: relative;
+}
+
+.first-value {
+    opacity: 0.4;
+    font-size: 20px;
+    height: 22px;
+}
+
+.temp-value {
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    font-size: 20px;
+    opacity: 0.3;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-bottom: 1px solid rgb(30, 29, 29);
+    border-left: 1px solid rgb(37, 36, 36);
+    border-radius: 10px;
+    background-color: rgb(89, 154, 180);
+}
+
+.buttons>div {
+    border-top: 1px solid rgb(100, 163, 197);
+    border-right: 1px solid rgb(100, 163, 197);
+}
+
+.button {
+    border: 0.5px solid rgb(76, 121, 170);
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: rgb(130, 159, 255);
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+#equal {
+    background-color: rgb(0, 52, 88);
+    color: #fff;
+    font-size: 35px;
+    grid-column: span 2;
+}
+
+#equal:hover {
+    background-color: rgb(130, 159, 255);
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
